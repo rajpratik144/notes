@@ -14,7 +14,7 @@ const App = () => {
       <h1 className='text-white text-6xl flex justify-center '>Notes</h1>
       <div className='bg-gray-800 flex '>
         <Input tasks={tasks} settasks={settasks}/>
-        <Display tasks={tasks} deletenode={deletenode}/>
+        <Display tasks={tasks} deletenote={deletenote}/>
       </div>
     </div>
   )
