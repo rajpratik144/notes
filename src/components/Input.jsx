@@ -15,7 +15,6 @@ const Input = ({tasks,settasks}) => {
         settitle('')
         setDescription('')
 
-
     }
 
     return (
