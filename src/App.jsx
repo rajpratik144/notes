@@ -6,7 +6,7 @@ import { useState } from 'react'
 const App = () => {
   const [tasks, settasks] = useState([])
 
-  const deletenode = (idx)=>{
+  const deletenote = (idx)=>{
   settasks(tasks.filter((_, index) => index !== idx))
    }
   return (

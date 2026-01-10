@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './Card'
 
-const Display = ({tasks,deletenode}) => {
+const Display = ({tasks,deletenote}) => {
   return (
     <div className='w-1/2 h-screen p-10 flex gap-5 flex-wrap overflow-auto'>
         {tasks.map((tasks,idx)=>{
@@ -11,7 +11,7 @@ const Display = ({tasks,deletenode}) => {
             idx={idx}
             title={tasks.title}
             description={tasks.description} 
-            deletenode={deletenode}
+            deletenote={deletenote}
             />
           )
         })}    
