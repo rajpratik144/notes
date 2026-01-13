@@ -1,10 +1,17 @@
 import React from 'react'
 import Input from './components/Input'
 import Display from './components/Display'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const App = () => {
-  const [tasks, settasks] = useState([])
+  const [tasks, settasks] = useState(()=>{
+    const savedtasks=localStorage.getItem('notes')
+    return savedtasks? JSON.parse(savedtasks) :[]
+  })
+
+  useEffect(()=>{
+    localStorage.setItem('notes',JSON.stringify(tasks))
+  },[tasks])
 
   const deletenote = (idx)=>{
   settasks(tasks.filter((_, index) => index !== idx))
