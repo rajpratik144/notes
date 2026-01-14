@@ -7,7 +7,7 @@ const Card = ({title, description , key, idx, deletenote}) => {
         <h2 className='font-bold text-xl'>{title}</h2>
         <p className='text-sm '>{description}</p>
       </div>
-      <button onClick={()=>{deletenote(idx)}} className='bg-red-500 p-1 rounded w-40 flex justify-center font-bold m-5'>delete node</button>
+      <button onClick={()=>{deletenote(idx)}} className='bg-red-500 p-1 rounded w-40 flex justify-center font-bold m-5'>delete note</button>
     </div>
   )
 }
