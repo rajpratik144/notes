@@ -3,7 +3,6 @@ import { useState } from 'react'
 
 const Input = ({tasks,settasks}) => {
     const [title, settitle] = useState('')
-    
     const [description, setDescription] = useState('')
 
     const submitHandler=(e)=>{
